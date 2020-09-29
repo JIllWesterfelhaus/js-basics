@@ -1,16 +1,7 @@
 
-//below is object literal
-let person = {
-    name: 'Jill',
-    age: 30
-};
+function greet(name, lastName) {
+    console.log('Hello ' + name + ' ' + lastName);
+}
 
+greet('John', 'Smith');
 
-//dot notation
-person.name = 'Jan';
-
-//Bracket Notation
-let selection = 'name';
-person[selection] = 'Mary';
-
-console.log(person.name);
