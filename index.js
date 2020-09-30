@@ -1,11 +1,21 @@
 
+let x = 10;
+let y = 3;
 
+// console.log(x + y);
+// console.log(x - y);
+// console.log(x * y);
+// console.log(x / y);
+// console.log(x % y);
+// console.log(x ** y);
 
-//calculating a value
-function square(number) {
-    return number * number
-}
+//Increment (++)
+// console.log(x++);
+// console.log(x);
 
+//Decrement (--)
+console.log(x--);
+console.log(x);
 
-let number = square(2);
-console.log(number);
+console.log(--x);
+
