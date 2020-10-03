@@ -1,10 +1,13 @@
+let a = 'red';
+let b = 'blue';
 
-let userColor = undefined;
-let defaultColor = 'blue';
-let currentColor = userColor || defaultColor;
+let c = a;
+a = b;
+b = c;
 
-console.log(currentColor);
 
+console.log(a);
+console.log(b);
 
 
 
