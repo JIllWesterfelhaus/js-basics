@@ -1,13 +1,11 @@
 
-//Strict, same type and same value
-//console.log(1 === 1);
-//console.log('1' === 1);
+let userColor = undefined;
+let defaultColor = 'blue';
+let currentColor = userColor || defaultColor;
+
+console.log(currentColor);
 
 
-//loose equality
-console.log(1 == 1);
-console.log('1' == 1);
-console.log(true == 1);
-console.log(true == 1);
+
 
 
