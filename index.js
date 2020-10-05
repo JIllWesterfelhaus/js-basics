@@ -1,19 +1,16 @@
 
-let role = 'moderator';
+// for (let i = 0; i <= 5; i++) {
+//     if (i % 2 !== 0) console.log(i);
+// }
 
-switch (role) {
-    case 'guest':
-        console.log('Guest User');
-        break;
+// let i = 9;
+// while (i <= 5) {
+//     if (i % 2 !== 0) console.log(i);
+//     i++;
+// }
 
-    case 'moderator':
-        console.log('Moderator User');
-        break;
-
-    default:
-        console.log('Unknown User');
-}
-
-if (role === 'guest') console.log('Guest');
-else if (role === 'moderator') console.log('Moderator');
-else console.log('Unknown User');
+let i = 9;
+do {
+    if (i % 2 !== 0) console.log(i);
+    i++;
+} while (i <= 5);
