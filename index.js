@@ -1,12 +1,9 @@
 
-let i = 0;
-while (i <= 10) {
-    // if (i === 5) break;
-    if (i % 2 === 0) {
-        i++;
-        continue;
-    }
+let number = max(1, 2);
+console.log(number);
 
-    console.log(i);
-    i++;
+function max(a, b) {
+    return (a > b) ? a : b;
 }
+
+
