@@ -1,7 +1,21 @@
 
-console.log(isLandscape(600, 300));
+const output = fizzBuzz(false);
+console.log(output);
 
-function isLandscape(width, height) {
-    return (width > height)
+function fizzBuzz(input) {
+    if (typeof input !== 'number')
+        return NaN;
+
+    if ((input % 3 === 0) && (input % 5 === 0))
+        return 'FizzBuzz';
+
+    if (input % 3 === 0)
+        return 'Fizz';
+
+    if (input % 5 === 0)
+        return 'Buzz';
+
+    return input;
+
 }
 
