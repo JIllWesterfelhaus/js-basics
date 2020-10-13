@@ -7,6 +7,7 @@ function showNumbers(limit) {
         const message = (i % 2 === 0) ? 'EVEN' : 'ODD';
         console.log(i, message);
 
+
     }
 }
 
