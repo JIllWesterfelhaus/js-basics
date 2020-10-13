@@ -1,36 +1,13 @@
 
-// const output = fizzBuzz(4);
-// console.log(output);
+showNumbers(10);
 
-// function fizzBuzz(input) {
-//     if (typeof input !== 'number')
-//         return NaN;
+function showNumbers(limit) {
+    for (let i = 0; i <= limit; i++) {
 
-//     if ((input % 2 === 0) && (input % 10 === 0))
-//         return 'FizzBuzz';
+        const message = (i % 2 === 0) ? 'EVEN' : 'ODD';
+        console.log(i, message);
 
-//     if (input % 2 === 0)
-//         return 'Fizz';
-
-//     if (input % 10 === 0)
-//         return 'Buzz';
-
-//     return input;
-// }
-
-const output = oddEven(4); {
-    console.log(output);
-
-    if (input % 2 === 0)
-        return 'Even';
-
-    if (input % 1 === 0)
-        return 'Odd';
-
-    if (typeof input !== 'number')
-        return NaN;
-
-    return input;
+    }
 }
 
 
