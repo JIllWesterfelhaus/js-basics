@@ -1,23 +1,23 @@
+//falsy
+//undefined
+//null
+//''
+//false
+//0
+//  NaN
 
-// Speed Limit = 70
-// 5 -> 1 point
-// Math.floor(1.3)
-// 12 points -> suspended
+const array = [0, null, undefined, '', NaN, 2, 3, 4, 'false', 'Jill', 50];
 
-checkSpeed(130);
+console.log(countTruthy(array));
 
-function checkSpeed(speed) {
-    const speedLimit = 70;
-    const kmPerPoint = 5;
+function countTruthy(array) {
+    let count = 0;
+    for (let value of array)
+        if (value)
+            count++;
+    return count;
 
-    if (speed < speedLimit + kmPerPoint) {
-        console.log('Ok');
-        return;
-    }
-    const points = Math.floor(speed - speedLimit) /
-
-
-
+}
 
 
 
