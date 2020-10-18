@@ -1,14 +1,21 @@
 
-console.log(sum(10));
+const array = [80, 91, 81];
 
-function sum(limit) {
-    let sum = 0;
+console.log(calculateGrade(array));
 
-    for (let i = 0; i <= limit; i++)
-        if (i % 3 === 0 || i % 5 === 0)
-            sum += i;
-
-    return sum;
+function calculateGrade(marks) {
+    const average = calculateAverage(marks);
+    if (average < 60) return 'F';
+    if (average < 70) return 'D';
+    if (average < 80) return 'C';
+    if (average < 90) return 'B';
+    if (average < 101) return 'A';
 }
 
+function calculateAverage(array) {
+    let sum = 0;
+    for (let value of array)
+        sum += value;
+    return sum / array.length;
 
+}
