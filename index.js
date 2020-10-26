@@ -17,3 +17,14 @@ console.log(circle2);
 
 
 
+const myCircle = createCircle(1);
+
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function () {
+        console.log('draw');
+    }
+}
+
+const circle = new Circle(1);
+
