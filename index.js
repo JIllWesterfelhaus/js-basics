@@ -1,12 +1,12 @@
 
-const circle = {
-    radius: 1
-};
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function () {
+        console.log('draw');
 
-circle.color = 'yellow';
-circle.draw = function () { }
+    }
+}
 
-delete circle.color;
-delete circle.draw;
+const Circle1 = new Function('radius')
 
-console.log(circle);
+const another = new Circle(1);
