@@ -6,14 +6,16 @@ const circle = {
     }
 };
 
-for (let key in circle)
-    console.log(key, circle[key]);
+//const another = {};
 
-for (let key of Object.keys(circle))
-    console.log(key);
+//for (let key in circle)
+//another[key] = circle[key];
 
-for (let entry of Object.entries(circle))
-    console.log(entry);
+//another['radius'] = circle['radius'];
 
-if ('color' in circle) console.log('yes');
+//const another = Object.assign({}, circle);
 
+const another = { ...circle };
+
+
+console.log(another);
